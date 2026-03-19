@@ -23,7 +23,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
       HUGO_ENVIRONMENT: production
       TZ: Europe/London
     steps:
@@ -52,13 +51,14 @@ jobs:
       - name: Restore Hugo cache
         uses: actions/cache@v4
         with:
-          path: ${{ env.HUGO_CACHEDIR }}
+          path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum', '**/go.mod') }}
           restore-keys: |
             ${{ runner.os }}-hugo-
 
       - name: Build with Hugo
         env:
+          HUGO_CACHEDIR: /tmp/hugo_cache
           HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
         run: hugo --gc --minify
 
