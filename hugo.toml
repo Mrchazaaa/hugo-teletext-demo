@@ -1,0 +1,16 @@
+baseURL = "https://mrchazaaa.github.io/hugo-teletext-demo/"
+languageCode = "en-gb"
+title = "Charlie Howlett"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+# theme = "hugo-teletext"
+
+[module]
+  [[module.imports]]
+    path = "github.com/mrchazaaa/hugo-teletext"
+
+[params]
+  enableScanlines = true
+
+[markup]
+  [markup.highlight]
+    noClasses = false

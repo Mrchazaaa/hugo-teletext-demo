@@ -1,0 +1,10 @@
+# Hugo build output
+/public/
+
+# Hugo generated assets/cache
+/resources/_gen/
+.hugo_build.lock
+
+# Common local noise
+.DS_Store
+Thumbs.db
