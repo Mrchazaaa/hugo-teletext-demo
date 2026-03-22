@@ -11,6 +11,21 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 [params]
   enableScanlines = true
 
+[[menus.footer]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.footer]]
+  name = "Posts"
+  pageRef = "/posts"
+  weight = 20
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
 [markup]
   [markup.highlight]
     noClasses = false
