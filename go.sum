@@ -4,3 +4,5 @@ github.com/mrchazaaa/hugo-teletext v0.0.0-20260318000842-a9fac211ef28 h1:Kv1Sk6u
 github.com/mrchazaaa/hugo-teletext v0.0.0-20260318000842-a9fac211ef28/go.mod h1:sLPU3UgPxa+gfCl02699ho51NdsL1VFAsTynBlWIGgU=
 github.com/mrchazaaa/hugo-teletext v0.0.0-20260319174739-70c2fc06787e h1:1n0IOTVo6ilW7HgIlagQTIU3n7VELOrlK4iBjm0/Yxs=
 github.com/mrchazaaa/hugo-teletext v0.0.0-20260319174739-70c2fc06787e/go.mod h1:sLPU3UgPxa+gfCl02699ho51NdsL1VFAsTynBlWIGgU=
+github.com/mrchazaaa/hugo-teletext v0.2.0 h1:3GylS4wP9kVl+KCm3eWC5TXes9HHcsAzLCkCn8kYfpM=
+github.com/mrchazaaa/hugo-teletext v0.2.0/go.mod h1:sLPU3UgPxa+gfCl02699ho51NdsL1VFAsTynBlWIGgU=
