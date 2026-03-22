@@ -1,6 +1,6 @@
 ---
 title: "Teletext Demo"
-pageNumber: "P100"
+pageNumber: "100"
 ---
 
 This demo site exists to show the included Hugo Teletext theme in a realistic setup. It uses plain Markdown content so you can see how the theme handles a homepage, a section listing, and individual post pages.

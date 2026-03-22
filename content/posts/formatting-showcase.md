@@ -2,7 +2,7 @@
 title: "Formatting Showcase"
 date: 2026-03-19T09:00:00Z
 description: "Headings, tables, lists, links and general body copy"
-pageNumber: "P201"
+pageNumber: "201"
 ---
 
 This page is a compact reference for the Markdown elements the theme styles most clearly.

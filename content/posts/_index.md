@@ -1,6 +1,6 @@
 ---
 title: "Posts"
-pageNumber: "P200"
+pageNumber: "200"
 ---
 
 This section demonstrates the theme's list layout. Entries are sorted newest first, each item gets a date label, and the page body above the listings can be used for introductory copy like this.

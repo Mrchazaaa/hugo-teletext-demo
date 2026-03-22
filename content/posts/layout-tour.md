@@ -2,7 +2,7 @@
 title: "Layout Tour"
 date: 2026-03-18T15:30:00Z
 description: "List pages, single pages and the top status line"
-pageNumber: "P202"
+pageNumber: "202"
 ---
 
 The theme ships with a narrow set of layouts on purpose, and this post calls them out directly.

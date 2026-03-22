@@ -2,7 +2,7 @@
 title: "Transmission Log"
 date: 2026-03-17T07:45:00Z
 description: "A shorter post to show normal article rhythm"
-pageNumber: "P203"
+pageNumber: "203"
 ---
 
 Morning checks complete. Scanlines enabled, clock running, pages rendering, and content panels aligned.
