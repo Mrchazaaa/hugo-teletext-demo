@@ -1,0 +1,4 @@
+baseURL = "http://localhost:1313/hugo-teletext-demo/"
+
+[module]
+  replacements = "github.com/mrchazaaa/hugo-teletext -> hugo-teletext"
