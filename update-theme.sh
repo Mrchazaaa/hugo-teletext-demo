@@ -1,0 +1,1 @@
+hugo mod get github.com/mrchazaaa/hugo-teletext@latest
