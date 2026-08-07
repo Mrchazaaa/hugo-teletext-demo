@@ -4,12 +4,13 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - README.md
+      - assets/screenshots/**
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -22,6 +23,10 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     env:
       HUGO_ENVIRONMENT: production
       TZ: Europe/London
@@ -70,6 +75,10 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -77,3 +86,26 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Checkout source branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Update README screenshot
+        uses: Mrchazaaa/update-screenshots-action@v1
+        with:
+          url: ${{ steps.deployment.outputs.page_url }}
+          capture_path: assets/screenshots/demo-site.png
+          marker_name: screenshot
+          capture_format: image
+          markdown_path: README.md
+          viewport_width: 1440
+          viewport_height: 900
+          navigation_retries: 5
+          navigation_retry_delay_ms: 2000
+          delay_ms: 500
+          commit_changes: true
+          commit_message: "docs: update demo screenshot"

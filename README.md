@@ -2,6 +2,10 @@
 
 Demo site https://mrchazaaa.github.io/hugo-teletext-demo/.
 
+<!-- screenshot:start -->
+![Project screenshot](assets/screenshots/demo-site.png)
+<!-- screenshot:end -->
+
 # Running
 
 Use the local dev config when serving the site so `baseURL` points at localhost:
